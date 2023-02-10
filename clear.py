@@ -1,0 +1,29 @@
+from saveall import saveall 
+
+def clear(CHECKSESSION0,CHECKSESSION1,CURRENTSIZTYPES,SOLUTION_BAD,SOLUTION_GOOD,INTRO,NUMBERS,SESSIONHISTORY,NOT_SO_OLD,SO_OLD,JOURNALNUMBERS,HISTORYNUMBERS):
+    CHECKSESSION0.clear()
+    CHECKSESSION1.clear()
+
+    CURRENTSIZTYPES.clear()
+
+    NUMBERS["checkpartynumber"] = 0
+    NUMBERS["siznumber"] = 0
+
+    SOLUTION_BAD.clear()
+    SOLUTION_GOOD.clear()
+    INTRO.clear()
+
+    SESSIONHISTORY.clear()
+
+    NOT_SO_OLD.clear()
+    SO_OLD.clear()
+
+    HISTORYNUMBERS['gasmasknumbers'] = []
+    HISTORYNUMBERS['additionalnumbers'] = []
+    HISTORYNUMBERS['typeofsiz'] = []
+       
+    
+    saveall(SOLUTION_BAD,SOLUTION_GOOD,SO_OLD,NOT_SO_OLD,INTRO,CHECKSESSION1,CHECKSESSION0,NUMBERS,JOURNALNUMBERS,CURRENTSIZTYPES,SESSIONHISTORY,HISTORYNUMBERS)       
+
+
+    print("Временные списки очищены")
